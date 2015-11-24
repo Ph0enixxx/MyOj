@@ -27,8 +27,19 @@
             <li <?php if($P == 3): ?>class="active"<?php endif; ?>><a href="#contact">Contest</a></li>
             <li <?php if($P == 4): ?>class="active"<?php endif; ?>><a href="<?php echo U('Index/Problem');?>">ProblemSet</a></li>
             <li <?php if($P == 5): ?>class="active"<?php endif; ?>>
-              <a href="<?php echo U('Login/Index');?>"><?php echo ((isset($_SESSION["name"]) && ($_SESSION["name"] !== ""))?($_SESSION["name"]):"Login"); ?></a>
+              <a href="<?php echo U('Login/Index');?>"><?php echo ((isset($_SESSION["nick"]) && ($_SESSION["nick"] !== ""))?($_SESSION["nick"]):"Login"); ?></a>
             </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -42,19 +53,19 @@
 <div class="panel panel-default container" style="width:60%;">
   <div class="panel-body">
     <div class="bs-example container" data-example-id="basic-forms" style="width:85%;">
-      <form>
+      <form action="<?php echo U('Login/login');?>" method="post">
         <div class="form-group">
           <label for="exampleInputEmail1">Username</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="name">
+          <input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="name">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
         </div>
         
         <div class="checkbox">
           <label>
-            <input type="checkbox"> Remember Me
+            <input type="checkbox" name="remember"> Remember Me
           </label>
         </div>
         <button type="submit" class="btn btn-success">Submit</button>
