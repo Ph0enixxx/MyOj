@@ -1,4 +1,4 @@
-<html lang="zh-CN">
+<?php if (!defined('THINK_PATH')) exit();?><html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,16 +18,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="__ROOT__">YTU OnlineJudge</a>
+          <a class="navbar-brand" href="/oj">YTU OnlineJudge</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li <if condition="$P eq 1">class="active"</if>><a href="__ROOT__">Home</a></li>
-            <li <if condition="$P eq 2">class="active"</if>><a href="#about">BBS</a></li>
-            <li <if condition="$P eq 3">class="active"</if>><a href="#contact">Contest</a></li>
-            <li <if condition="$P eq 4">class="active"</if>><a href="{:U('Index/Problem')}">ProblemSet</a></li>
-            <li <if condition="$P eq 5">class="active"</if>>
-              <a href="{:U('Login/Index')}">{$_SESSION.name|default="Login"}</a>
+            <li <?php if($P == 1): ?>class="active"<?php endif; ?>><a href="/oj">Home</a></li>
+            <li <?php if($P == 2): ?>class="active"<?php endif; ?>><a href="#about">BBS</a></li>
+            <li <?php if($P == 3): ?>class="active"<?php endif; ?>><a href="#contact">Contest</a></li>
+            <li <?php if($P == 4): ?>class="active"<?php endif; ?>><a href="<?php echo U('Index/Problem');?>">ProblemSet</a></li>
+            <li <?php if($P == 5): ?>class="active"<?php endif; ?>>
+              <a href="<?php echo U('Login');?>"><?php echo ((isset($_SESSION["name"]) && ($_SESSION["name"] !== ""))?($_SESSION["name"]):"Login"); ?></a>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -37,3 +37,7 @@
   </head>
 <body style="padding-top:50px;">
     
+    
+  
+
+</body></html>

@@ -26,6 +26,9 @@
             <li <?php if($P == 2): ?>class="active"<?php endif; ?>><a href="#about">BBS</a></li>
             <li <?php if($P == 3): ?>class="active"<?php endif; ?>><a href="#contact">Contest</a></li>
             <li <?php if($P == 4): ?>class="active"<?php endif; ?>><a href="<?php echo U('Index/Problem');?>">ProblemSet</a></li>
+            <li <?php if($P == 5): ?>class="active"<?php endif; ?>>
+              <a href="<?php echo U('Login/Index');?>"><?php echo ((isset($_SESSION["name"]) && ($_SESSION["name"] !== ""))?($_SESSION["name"]):"Login"); ?></a>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

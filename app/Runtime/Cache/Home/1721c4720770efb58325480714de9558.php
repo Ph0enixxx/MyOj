@@ -27,7 +27,7 @@
             <li <?php if($P == 3): ?>class="active"<?php endif; ?>><a href="#contact">Contest</a></li>
             <li <?php if($P == 4): ?>class="active"<?php endif; ?>><a href="<?php echo U('Index/Problem');?>">ProblemSet</a></li>
             <li <?php if($P == 5): ?>class="active"<?php endif; ?>>
-              <a href="<?php echo U('Login');?>"><?php echo ((isset($_SESSION["name"]) && ($_SESSION["name"] !== ""))?($_SESSION["name"]):"Login"); ?></a>
+              <a href="<?php echo U('Login/Index');?>"><?php echo ((isset($_SESSION["name"]) && ($_SESSION["name"] !== ""))?($_SESSION["name"]):"Login"); ?></a>
             </li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -37,45 +37,32 @@
   </head>
 <body style="padding-top:50px;">
     
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">OnlineJudge</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="./">首页</a></li>
-                  <li><a href="javascript:window.alert('敬请期待')">新特性</a></li>
-                  <li><a href="#">联系我们</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Martin Fowler：“任何傻瓜都能写出计算机可以理解的代码。好的程序员能写出人能读懂的代码” </h1>
-            <p class="lead">听说，帅的人都在用OJ做题。</p>
-            <p class="lead">
-              <a href="<?php echo U('/Home/login');?>" class="btn btn-lg btn-default">进入OJ!</a>
-            </p>
-          </div>
-
-          
-
+<br>
+<br>
+<div class="panel panel-default container" style="width:60%;">
+  <div class="panel-body">
+    <div class="bs-example container" data-example-id="basic-forms" style="width:85%;">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="name">
         </div>
-
-      </div>
-
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember Me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
- 
+  </div>
+</div>
+    
   
 
 </body></html>
