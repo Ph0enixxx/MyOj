@@ -1,0 +1,72 @@
+[ 2015-11-24T16:14:55+08:00 ] 127.0.0.1 /oj/index.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+NOTIC: [2] array_shift() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/oj/ThinkPHP/Library/Think/Route.class.php 第 38 行.
+ERR: 无法加载模块:Index
+
+[ 2015-11-24T16:40:49+08:00 ] 127.0.0.1 /oj/index.php/Public/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+NOTIC: [2] array_shift() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/oj/ThinkPHP/Library/Think/Route.class.php 第 38 行.
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T16:40:49+08:00 ] 127.0.0.1 /oj/index.php/Public/css/cover.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+NOTIC: [2] array_shift() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/oj/ThinkPHP/Library/Think/Route.class.php 第 38 行.
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T16:41:10+08:00 ] 127.0.0.1 /oj/index.php/Public/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+NOTIC: [2] array_shift() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/oj/ThinkPHP/Library/Think/Route.class.php 第 38 行.
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T16:41:16+08:00 ] 127.0.0.1 /oj/index.php/Public/css/cover.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+NOTIC: [2] array_shift() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/oj/ThinkPHP/Library/Think/Route.class.php 第 38 行.
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T16:41:16+08:00 ] 127.0.0.1 /oj/index.php/Public/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+NOTIC: [2] array_shift() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/oj/ThinkPHP/Library/Think/Route.class.php 第 38 行.
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T16:57:05+08:00 ] 127.0.0.1 /oj/index.php/Public/css/cover.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T16:57:05+08:00 ] 127.0.0.1 /oj/index.php/Public/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T16:57:14+08:00 ] 127.0.0.1 /oj/index.php/Public/css/cover.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T16:57:14+08:00 ] 127.0.0.1 /oj/index.php/Public/bootstrap/css/bootstrap.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+ERR: 无法加载模块:Public
+
+[ 2015-11-24T18:29:08+08:00 ] 127.0.0.1 /oj/index.php/Index/Problem.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+ERR: 无法加载模块:Index
+
