@@ -26,13 +26,31 @@
             <li <?php if($P == 2): ?>class="active"<?php endif; ?>><a href="#about">BBS</a></li>
             <li <?php if($P == 3): ?>class="active"<?php endif; ?>><a href="#contact">Contest</a></li>
             <li <?php if($P == 4): ?>class="active"<?php endif; ?>><a href="<?php echo U('Index/Problem');?>">ProblemSet</a></li>
-            <li <?php if($P == 5): ?>class="active"<?php endif; ?>>
-              <a href="<?php echo U('Login/Index');?>"><?php echo ((isset($_SESSION["name"]) && ($_SESSION["name"] !== ""))?($_SESSION["name"]):"Login"); ?></a>
-            </li>
+            
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <?php if(empty($_SESSION['nick'])): ?><li><a href="<?php echo U('Login/index');?>">Login</a></li>
+          <?php else: ?> 
+            <li class="dropdown">
+            <a href="<?php echo U('Login');?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo ((isset($_SESSION["nick"]) && ($_SESSION["nick"] !== ""))?($_SESSION["nick"]):"Login"); ?><span class="caret"></span></a> 
+            <ul class="dropdown-menu">
+              <li><a href="#">个人中心</a></li>
+              <li><a href="#">修改资料</a></li>
+              <li><a href="#">私信</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="<?php echo U('login/logout');?>">登出</a></li>
+            </ul>
+            </li><?php endif; ?> 
+
+
+          
+
+
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    <script src="/Public/bootstrap/js/jquery.js"></script>
+    <script src="/Public/bootstrap/js/bootstrap.min.js"></script>
 
   </head>
 <body style="padding-top:50px;">
