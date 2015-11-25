@@ -63,7 +63,7 @@
 <div class="panel panel-default container" style="width:60%;">
   <div class="panel-body">
     <div class="bs-example container" data-example-id="basic-forms" style="width:85%;">
-      <form action="<?php echo U('Login/login');?>" method="post">
+      <form action="<?php echo U('Login/sign');?>" method="post">
         <div class="form-group">
           <label for="exampleInputEmail1">Username</label>
           <input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="name">
@@ -72,14 +72,16 @@
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
         </div>
-        
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="remember"> Remember Me
-          </label>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Reenter the Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password2" placeholder="Renter Password">
         </div>
-
-        <button type="submit" class="btn btn-success">Submit</button><a href="<?php echo U('/Home/Login/signup');?>" style="margin-left:9px;">Sign up</a>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Nick name</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="nick" placeholder="nick">
+        </div>
+        
+        <button type="submit" class="btn btn-success">Sign up</button>
       </form>
     </div>
   </div>

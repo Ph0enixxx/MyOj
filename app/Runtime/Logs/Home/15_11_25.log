@@ -20566,3 +20566,484 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
 
+[ 2015-11-25T23:27:17+08:00 ] 127.0.0.1 /oj/index.php/Home/Msg/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `mymsg` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `mymsg` WHERE `to` = 'admin' AND `read` = 0  [ RunTime:0.0007s ]
+SQL: UPDATE `mymsg` SET `time`='2015-11-25 23:18:37',`from`='admin',`to`='admin',`title`='阿斯达',`content`='啊数组初学者',`read`='1' WHERE `id` = 17 [ RunTime:0.0007s ]
+SQL: UPDATE `mymsg` SET `time`='2015-11-25 23:22:10',`from`='admin',`to`='admin',`title`='安定门',`content`='中兄次之',`read`='1' WHERE `id` = 19 [ RunTime:0.0004s ]
+SQL: UPDATE `mymsg` SET `time`='2015-11-25 23:24:14',`from`='admin',`to`='admin',`title`='zxc ',`content`='zxc',`read`='1' WHERE `id` = 22 [ RunTime:0.0004s ]
+SQL: SELECT * FROM `mymsg` WHERE `to` = 'admin' AND `read` = 0  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1957e975426890445b61855cec9e87d2.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1957e975426890445b61855cec9e87d2.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1957e975426890445b61855cec9e87d2.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1957e975426890445b61855cec9e87d2.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-25T23:27:34+08:00 ] 127.0.0.1 /oj/index.php/Home/login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2015-11-25T23:27:36+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2015-11-25T23:27:54+08:00 ] 127.0.0.1 /oj/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2015-11-25T23:28:05+08:00 ] 127.0.0.1 /oj/index.php/Home/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-11-25T23:28:07+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' AND `password` = 'admin888' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mymsg` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `mymsg` WHERE `to` = 'admin' AND `read` = 0  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2015-11-25T23:28:08+08:00 ] 127.0.0.1 /oj/index.php/Home/User.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2015-11-25T23:29:58+08:00 ] 127.0.0.1 /oj/index.php/Home/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2015-11-25T23:31:26+08:00 ] 127.0.0.1 /oj/index.php/Home/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2015-11-25T23:31:29+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/signup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2015-11-25T23:31:54+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/signup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-11-25T23:44:17+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' AND `password` = 'admin888' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mymsg` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `mymsg` WHERE `to` = 'admin' AND `read` = 0  [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001397s ]
+
+[ 2015-11-25T23:44:19+08:00 ] 127.0.0.1 /oj/index.php/Home/User.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2015-11-25T23:44:24+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/signup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2015-11-25T23:44:34+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/sign.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2015-11-25T23:44:35+08:00 ] 127.0.0.1 /oj/index.php/Home/User.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2015-11-25T23:44:38+08:00 ] 127.0.0.1 /oj/index.php/Home/login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2015-11-25T23:44:40+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/1721c4720770efb58325480714de9558.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-11-25T23:44:43+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/signup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/b0a2b77bdf79f91890e98b18e23fbb65.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2015-11-25T23:45:00+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/sign.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'aadmin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/LoginController.class.php 第 72 行.
+SQL: INSERT INTO `user` (`username`,`password`,`nick`) VALUES ('aadmin','admin8','在许昌') [ RunTime:0.0092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-11-25T23:45:37+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/LoginController.class.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2015-11-25T23:45:44+08:00 ] 127.0.0.1 /oj/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' AND `password` = 'admin888' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mymsg` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mymsg` WHERE `to` = 'admin' AND `read` = 0  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000671s ]
+
+[ 2015-11-25T23:45:45+08:00 ] 127.0.0.1 /oj/index.php/Home/User.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+

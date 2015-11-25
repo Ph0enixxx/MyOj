@@ -55,6 +55,37 @@ class LoginController extends Controller {
     }
     public function signup()
     {
-        
+        $this->display('Index/signup');
+    }
+    public function sign()
+    {
+        if(I('post.password')!=I('post.password2'))
+        {
+            echo "<script language='javascript'>\n";
+            echo "alert('输入密码不同');\n";
+            echo "history.go(-1);\n";
+            echo "</script>";
+            return;
+        }
+        $data = M('user');
+        $tmp['username'] = I('post.username');
+        $check = $data->where($tmp)->limit(1)->select();
+        if(is_null($check[0]))
+        {
+            $tmp['password'] = I('post.password');
+            $tmp['nick'] = I('post.nick');
+            $data->add($tmp);
+            echo "<script language='javascript'>\n";
+            echo "alert('注册成功');\n";
+            echo "history.go(-1);\n";
+            echo "</script>";
+        }
+        else
+        {
+            echo "<script language='javascript'>\n";
+            echo "alert('用户已存在');\n";
+            echo "location.href='".U('/Home/User')."'\n";
+            echo "</script>";
+        }
     }
 }
