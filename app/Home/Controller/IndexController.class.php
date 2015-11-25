@@ -19,5 +19,6 @@ class IndexController extends Controller {
         $this->problemList = $d;
         $this->P = 4;
         $this->display('problem');
+        
     }
 }

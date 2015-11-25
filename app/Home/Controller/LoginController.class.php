@@ -32,10 +32,12 @@ class LoginController extends Controller {
     	else
     	{
     		$_SESSION['username'] = $tmp['username'];
+            $_SESSION['id'] = $data[0]['id'];
     		$_SESSION['nick'] = $data[0]['nick'];
+    		#echo U('/Home/User');
     		echo "<script language='javascript'>\n";
 			echo "alert('Login success!');\n";
-			echo "location.href='".U('Login/index')."'\n";
+			echo "location.href='".U('/Home/User')."'\n";
 			echo "</script>";
     	}	
     }
