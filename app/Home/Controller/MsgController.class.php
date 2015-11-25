@@ -6,7 +6,42 @@ class MsgController extends Controller {
     {
     	$msg = M('mymsg');
     	$id['id']  = $_SESSION['id'];
+    	$id['read'] = 0;
     	$data = $msg->where($id)->select();
-    	var_dump($data);
+    	foreach ($data as $value) 
+    	{
+    		$value['read'] = 1;
+    		$msg->save($value);
+    	}
+
+    	$this->data = $data;//私信内容
+    	$_SESSION['msg'] = MsgController::getUnRead();
+    	$this->userInf = UserController::getInf();
+    	$this->display('Index/msg');
+    	#分别显示已读未读
+    }
+    public function old()
+    {
+    	$msg = M('mymsg');
+    	$id['id']  = $_SESSION['id'];
+    	$data = $msg->where($id)->select();
+    	$this->data = $data;//私信内容
+    	$_SESSION['msg'] = 0;
+    	$this->old = 1;
+    	$this->userInf = UserController::getInf();
+    	$this->display('Index/msg');
+    }
+    public static function getUnRead()
+    {
+    	$msg = M('mymsg');
+    	$id['id']  = $_SESSION['id'];
+    	$id['read'] = 0;
+    	$data = $msg->where($id)->select();
+    	return count($data);
+    	# code...
+    }
+    public function write($value='')
+    {
+    	# code...
     }
 }
