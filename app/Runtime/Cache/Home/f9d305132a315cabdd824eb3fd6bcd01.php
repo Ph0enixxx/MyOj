@@ -68,14 +68,17 @@
  <li>今日排名：</li>
  <li>总排名：</li>
  </ul>
- <a type="button" href="<?php echo U('/Home/Msg/sendmsg');?>">写私信</button>
+ <button onclick="window.location.href='<?php echo U('/Home/Msg/sendmsg');?>'">写私信</button>
  <button>逛论坛</button>
 </div>
-<div class="container panel panel-default" style="width:92%;margin-left:24%;margin-top:14px;position:absolute">
+<div class="container panel panel-default" style="width:92%;margin-left:24%;margin-top:14px;position:absolute;height:100%;">
+  <form  method="post" style="padding-top:10px;" action="<?php echo U('Home/Msg/send');?>">
     <div class="input-group">
       <input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="title">
-      <input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="收件人ID">
-    </div>
-    <textarea name="content"></textarea>
+      <input type="text" class="form-control" placeholder="收件人ID" aria-describedby="basic-addon1" name="to">
+    </div><br>
+    <textarea name="content" style="width:50%;height:50%"></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
 </div>
 </body>

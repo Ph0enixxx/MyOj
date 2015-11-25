@@ -68,7 +68,7 @@
  <li>今日排名：</li>
  <li>总排名：</li>
  </ul>
- <a type="button" href="<?php echo U('/Home/Msg/');?>">写私信</button>
+ <button onclick="window.location.href='<?php echo U('/Home/Msg/sendmsg');?>'">写私信</button>
  <button>逛论坛</button>
 </div>
 <div class="container panel panel-default" style="width:92%;margin-left:24%;position:absolute">

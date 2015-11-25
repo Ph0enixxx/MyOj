@@ -5,7 +5,7 @@ class MsgController extends Controller {
     public function index()
     {
     	$msg = M('mymsg');
-    	$id['id']  = $_SESSION['id'];
+    	$id['to']  = $_SESSION['id'];
     	$id['read'] = 0;
     	$data = $msg->where($id)->select();
     	foreach ($data as $value) 
@@ -23,7 +23,7 @@ class MsgController extends Controller {
     public function old()
     {
     	$msg = M('mymsg');
-    	$id['id']  = $_SESSION['id'];
+    	$id['to']  = $_SESSION['id'];
     	$data = $msg->where($id)->select();
     	$this->data = $data;//私信内容
     	$_SESSION['msg'] = 0;
@@ -34,15 +34,32 @@ class MsgController extends Controller {
     public static function getUnRead()
     {
     	$msg = M('mymsg');
-    	$id['id']  = $_SESSION['id'];
+    	$id['to']  = $_SESSION['id'];
     	$id['read'] = 0;
     	$data = $msg->where($id)->select();
     	return count($data);
     	# code...
     }
-    public function sendmsg($value='')
+    public function sendmsg()
     {
-    	$this->display('Index/sendmsg');
-    	# code...
+    		$this->display('Index/sendmsg');
+    }
+    public function send()
+    {
+    	if(is_null(I('post.to'))||is_null(I('post.title'))||is_null(I('post.content')))
+    	{
+    		return;
+		}
+		//var_dump($_POST['to']);
+    		$msg['to'] = I('post.to');
+    		$msg['title'] = I('post.title');
+    		$msg['content'] = I('post.content');
+    		$msg['from'] = $_SESSION['id'];
+    		$data = M('mymsg');
+    		$data->add($msg);
+    		echo "<script language='javascript'>\n";
+			echo "alert('发送成功!');\n";
+			echo "location.href='".U('Home/User/Index')."'\n";
+			echo "</script>";
     }
 }
