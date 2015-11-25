@@ -40,8 +40,9 @@ class MsgController extends Controller {
     	return count($data);
     	# code...
     }
-    public function write($value='')
+    public function sendmsg($value='')
     {
+    	$this->display('Index/sendmsg');
     	# code...
     }
 }
