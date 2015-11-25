@@ -78,7 +78,8 @@
             <input type="checkbox" name="remember"> Remember Me
           </label>
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
+
+        <button type="submit" class="btn btn-success">Submit</button><a href="#" style="margin-left:9px;">Sign up</a>
       </form>
     </div>
   </div>

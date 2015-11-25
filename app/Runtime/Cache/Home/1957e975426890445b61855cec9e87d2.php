@@ -68,8 +68,8 @@
  <li>今日排名：</li>
  <li>总排名：</li>
  </ul>
- <button onclick="window.location.href='<?php echo U('/Home/Msg/sendmsg');?>'">写私信</button>
- <button>逛论坛</button>
+ <button onclick="window.location.href='<?php echo U('/Home/Msg/sendmsg');?>'" class="btn btn-success">写私信</button>
+ <button class="btn btn-info">逛论坛</button>
 </div>
 <div class="container panel panel-default" style="width:92%;margin-left:24%;margin-top:14px;position:absolute">
 	<?php if(is_array($data)): foreach($data as $key=>$msg): ?><div class="panel panel-default" style="margin:10px;height:20%;width:80%;">
@@ -77,10 +77,11 @@
   		<div class="panel-body"><?php echo ($msg["content"]); ?></div>
   	</div><?php endforeach; endif; ?>
   <?php if(empty($old)): ?><div class="panel panel-default" style="margin:10px;height:20%;width:80%;">
-      <div class="panel-body"><a href="<?php echo U('/Home/Msg/old/write');?>">查看已读私信</a></div>
+      <div class="panel-body"><a href="<?php echo U('/Home/Msg/old');?>">查看已读私信</a></div>
   </div><?php endif; ?>
-  <?php if(empty($data)): ?><script language='javascript'>
-      location.href="<?php echo U('/Home/Msg/old/write');?>";
-    </script><?php endif; ?>
+  <?php if(empty($old)): if(empty($data)): ?><script language='javascript'>
+      location.href="<?php echo U('/Home/Msg/old');?>";
+    </script><?php endif; endif; ?> 
+
 </div>
 </body>

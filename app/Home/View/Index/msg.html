@@ -10,13 +10,16 @@
   </foreach>
   <empty name="old">
   <div class="panel panel-default" style="margin:10px;height:20%;width:80%;">
-      <div class="panel-body"><a href="{:U('/Home/Msg/old/write')}">查看已读私信</a></div>
+      <div class="panel-body"><a href="{:U('/Home/Msg/old')}">查看已读私信</a></div>
   </div>
   </empty>
+  <empty name="old"> 
   <empty name="data">
     <script language='javascript'>
-      location.href="{:U('/Home/Msg/old/write')}";
+      location.href="{:U('/Home/Msg/old')}";
     </script>
   </empty>
+  </empty> 
+
 </div>
 </body>

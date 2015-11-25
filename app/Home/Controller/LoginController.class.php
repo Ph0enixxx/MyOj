@@ -53,4 +53,8 @@ class LoginController extends Controller {
 		echo "</script>";
     	# code...
     }
+    public function signup()
+    {
+        
+    }
 }

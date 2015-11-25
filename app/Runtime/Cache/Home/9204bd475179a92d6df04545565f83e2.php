@@ -68,6 +68,13 @@
   <div class="container">
     <table class="table table-striped container">
       <tbody>
+          <tr>
+             <td>ID</td>
+             <td>标题</td>
+             <td>来源</td>
+             <td>AC</td>
+             <td>提交数</td>
+          </tr>
       <?php if(is_array($problemList)): foreach($problemList as $key=>$data): ?><tr>
              <td><?php echo ($data["id"]); ?></td>
              <td><?php echo ($data["title"]); ?></td>

@@ -5,7 +5,7 @@ class MsgController extends Controller {
     public function index()
     {
     	$msg = M('mymsg');
-    	$id['to']  = $_SESSION['id'];
+    	$id['to']  = $_SESSION['username'];
     	$id['read'] = 0;
     	$data = $msg->where($id)->select();
     	foreach ($data as $value) 
@@ -23,7 +23,7 @@ class MsgController extends Controller {
     public function old()
     {
     	$msg = M('mymsg');
-    	$id['to']  = $_SESSION['id'];
+    	$id['to']  = $_SESSION['username'];
     	$data = $msg->where($id)->select();
     	$this->data = $data;//私信内容
     	$_SESSION['msg'] = 0;
@@ -34,7 +34,7 @@ class MsgController extends Controller {
     public static function getUnRead()
     {
     	$msg = M('mymsg');
-    	$id['to']  = $_SESSION['id'];
+    	$id['to']  = $_SESSION['username'];
     	$id['read'] = 0;
     	$data = $msg->where($id)->select();
     	return count($data);
@@ -54,7 +54,7 @@ class MsgController extends Controller {
     		$msg['to'] = I('post.to');
     		$msg['title'] = I('post.title');
     		$msg['content'] = I('post.content');
-    		$msg['from'] = $_SESSION['id'];
+    		$msg['from'] = $_SESSION['username'];
     		$data = M('mymsg');
     		$data->add($msg);
     		echo "<script language='javascript'>\n";

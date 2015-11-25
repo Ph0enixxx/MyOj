@@ -68,8 +68,8 @@
  <li>今日排名：</li>
  <li>总排名：</li>
  </ul>
- <button onclick="window.location.href='<?php echo U('/Home/Msg/sendmsg');?>'">写私信</button>
- <button>逛论坛</button>
+ <button onclick="window.location.href='<?php echo U('/Home/Msg/sendmsg');?>'" class="btn btn-success">写私信</button>
+ <button class="btn btn-info">逛论坛</button>
 </div>
 <div class="container panel panel-default" style="width:92%;margin-left:24%;margin-top:14px;position:absolute;height:100%;">
   <form  method="post" style="padding-top:10px;" action="<?php echo U('Home/Msg/send');?>">
