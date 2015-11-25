@@ -56,10 +56,34 @@ class MsgController extends Controller {
     		$msg['content'] = I('post.content');
     		$msg['from'] = $_SESSION['username'];
     		$data = M('mymsg');
-    		$data->add($msg);
-    		echo "<script language='javascript'>\n";
-			echo "alert('发送成功!');\n";
-			echo "location.href='".U('Home/User/Index')."'\n";
-			echo "</script>";
+            $user = M('user');
+            $tmp['username'] = $msg['to'];
+            $check = $user->where($tmp)->limit(1)->select();
+            //var_dump($check);
+            if(!is_null($check[0]))
+            {
+        		if($data->add($msg))#做用户检测
+                {
+                    $_SESSION['msg'] = MsgController::getUnRead();
+            		echo "<script language='javascript'>\n";
+        			echo "alert('发送成功!');\n";
+        			echo "location.href='".U('Home/User/Index')."'\n";
+        			echo "</script>";
+                }
+                else
+                {
+                    echo "<script language='javascript'>\n";
+                    echo "alert('发送失败!');\n";
+                    echo "location.href='".U('Home/User/Index')."'\n";
+                    echo "</script>"; 
+                }
+            }
+            else
+            {
+                echo "<script language='javascript'>\n";
+                echo "alert('发送失败,查无此人!');\n";
+                echo "location.href='".U('Home/User/Index')."'\n";
+                echo "</script>"; 
+            }
     }
 }

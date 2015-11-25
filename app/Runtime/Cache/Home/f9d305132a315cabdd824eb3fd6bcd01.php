@@ -60,7 +60,7 @@
     
 <body>
 <div class="container panel panel-default" style="height:100%;width:23%;float:left;text-align:center">
-<img src="<?php echo ((isset($userInf["img"]) && ($userInf["img"] !== ""))?($userInf["img"]):'http://codevs.cn/accounts/avatar/c3026d095e6970b60f49c1cba11dbda0-80.png'); ?>" alt="header" class="img-circle"><br>
+<img src="<?php echo ((isset($userInf["img"]) && ($userInf["img"] !== ""))?($userInf["img"]):'/Public/head.png'); ?>" alt="header" class="img-circle"><br>
  <h2><?php echo ($userInf["nick"]); ?></h2><br>
  <ul>
  <li>累计AC：</li>
@@ -77,8 +77,8 @@
       <input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="title">
       <input type="text" class="form-control" placeholder="收件人ID" aria-describedby="basic-addon1" name="to">
     </div><br>
-    <textarea name="content" style="width:50%;height:50%"></textarea><br><br>
-    <button type="submit">Submit</button>
+    <textarea name="content" class="form-control" style="width:50%;height:50%" placeholder="内容"></textarea><br>
+    <button type="submit" class="btn btn-warning">Submit</button>
   </form>
 </div>
 </body>
