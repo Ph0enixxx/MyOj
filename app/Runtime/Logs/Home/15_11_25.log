@@ -21047,3 +21047,29 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
 
+[ 2015-11-25T23:48:09+08:00 ] 127.0.0.1 /oj/index.php/Home/User.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
