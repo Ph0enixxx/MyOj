@@ -80,8 +80,12 @@
       <div class="panel-body"><a href="<?php echo U('/Home/Msg/old');?>">查看已读私信</a></div>
   </div><?php endif; ?>
   <?php if(empty($old)): if(empty($data)): ?><script language='javascript'>
-      location.href="<?php echo U('/Home/Msg/old');?>";
-    </script><?php endif; endif; ?> 
+      function jmp() 
+      {
+        location.href="<?php echo U('/Home/Msg/old');?>";
+      }
+        setTimeout("jmp()",900);
+      </script><?php endif; endif; ?> 
 
 </div>
 </body>

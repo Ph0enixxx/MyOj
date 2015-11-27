@@ -16,7 +16,11 @@
   <empty name="old"> 
     <empty name="data">
       <script language='javascript'>
+      function jmp() 
+      {
         location.href="{:U('/Home/Msg/old')}";
+      }
+        setTimeout("jmp()",1000);
       </script>
     </empty>
   </empty> 
