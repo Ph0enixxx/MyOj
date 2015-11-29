@@ -58,33 +58,19 @@
   </head>
 <body style="padding-top:50px;">
     
-<br>
-<br>
-<div class="panel panel-default container" style="width:60%;">
-  <div class="panel-body">
-    <div class="bs-example container" data-example-id="basic-forms" style="width:85%;">
-      <form action="<?php echo U('Login/login');?>" method="post">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Username</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="name">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
-        </div>
-        
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" name="remember"> Remember Me
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-success">Submit</button><a href="<?php echo U('/Home/Login/signup');?>" style="margin-left:9px;">Sign up</a>
-      </form>
-    </div>
-  </div>
+<body>
+<style>
+h5
+{
+	padding-right:15px;
+	float: left; 
+	color: #AAA;
+}
+</style>
+<div class="panel panel-default container" style="width:80%;margin-top:10px;">
+<?php if(is_array($data)): foreach($data as $key=>$msg): ?><div class="panel-body" onclick="location.href='<?php echo U('/Home/bbs/view');?>?id=<?php echo ($msg["id"]); ?>'">
+  	<h3><?php echo ($msg["title"]); ?></h3><br>
+  	<p><?php echo (substr($msg["content"],0,100)); ?>...</p>
+  	<h5>作者:<?php echo ($msg["admin"]); ?></h5><h5>最后回复:<?php echo ($msg["admin"]); ?></h5><h5>发帖时间:<?php echo ($msg["last"]); ?></h5><h5>回复数:<?php echo ($msg["re"]); ?></h5>
+  </div><?php endforeach; endif; ?>
 </div>
-    
-  
-
-</body></html>

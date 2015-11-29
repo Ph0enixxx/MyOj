@@ -1,0 +1,19 @@
+<include file="Index/header"/>
+<body>
+<style>
+h5
+{
+	padding-right:15px;
+	float: left; 
+	color: #AAA;
+}
+</style>
+<div class="panel panel-default container" style="width:80%;margin-top:10px;">
+<foreach  name="data" item="msg">
+  <div class="panel-body" onclick="location.href='{:U('/Home/bbs/view')}?id={$msg.id}'">
+  	<h3>{$msg.title}</h3><br>
+  	<p>{$msg.content|substr=0,100}...</p>
+  	<h5>作者:{$msg.admin}</h5><h5>最后回复:{$msg.admin}</h5><h5>发帖时间:{$msg.last}</h5><h5>回复数:{$msg.re}</h5>
+  </div>
+</foreach>
+</div>	
