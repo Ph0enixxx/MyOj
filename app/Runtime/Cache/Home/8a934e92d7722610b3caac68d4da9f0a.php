@@ -76,7 +76,10 @@ h5
 
   <?php if(is_array($res)): foreach($res as $key=>$msg): ?><hr>
   <div class="panel-body">
-  	<img src="<?php echo ($users[$count]["img"]); ?>"/><p><?php echo ($msg["content"]); ?></p>
-  	<h5>作者:<?php echo ($users[$count++]["nick"]); ?></h5><h5>时间:<?php echo ($msg["from"]); ?></h5>
+  	<div class="panel-body" style="float:left;text-align:center;position:relative">
+  	<img src="<?php echo ($users[$count]["img"]); ?>" class="img-circle" height=60 width=60/><br><div class="center-block" style="text-align:center;"><?php echo ($users[$count++]["nick"]); ?></div>
+  	</div>
+  	<div style="height:15%;position:relative"><p><?php echo ($msg["content"]); ?></p></div>
+  	<div><h5>时间:<?php echo ($msg["time"]); ?></h5></div>
   </div><?php endforeach; endif; ?>
 </div>

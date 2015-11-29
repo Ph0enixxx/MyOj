@@ -45,6 +45,14 @@
             </ul>
             </li><?php endif; ?> 
 
+<style>
+h5
+{
+  padding-right:15px;
+  float: left; 
+  color: #AAA;
+}
+</style>
 
           
 

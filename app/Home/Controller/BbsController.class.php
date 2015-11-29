@@ -7,6 +7,7 @@ class BbsController extends Controller {
     	#分页
     	$page = (int)I('get.page');
     	#发帖
+    	$this->P = 1;
     	if($page == 0)$page = 1;
     	$list = M('bbslist');
     	$data = $list->order('last desc')->page($page.',10')->select();
@@ -20,7 +21,8 @@ class BbsController extends Controller {
     	$list = M('bbslist');
     	$data = $list->where($tmp)->select();
     	$this->msg = $data[0];
-
+    	$this->P = 1;
+    	
     	$comment = M('bbsmsg');
     	$res = $comment->where($tmp)->select();
     	
@@ -34,7 +36,7 @@ class BbsController extends Controller {
        		$users[$count]['nick'] = $userImg[0]['nick'];
        		$users[$count++]['img'] = $userImg[0]['img'];
        	}
-       	var_dump($res);
+       	//var_dump($res);
        	$this->users = $users;
        	$this->count = 0;
     	$this->res = $res;

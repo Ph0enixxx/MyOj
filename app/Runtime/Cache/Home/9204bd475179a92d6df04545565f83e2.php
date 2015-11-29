@@ -22,7 +22,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li <?php if($P == 1): ?>class="active"<?php endif; ?>><a href="/oj">BBS</a></li>
+            <li <?php if($P == 1): ?>class="active"<?php endif; ?>><a href="<?php echo U('Home/bbs/index');?>">BBS</a></li>
             <li <?php if($P == 2): ?>class="active"<?php endif; ?>><a href="#about">Status</a></li>
             <li <?php if($P == 3): ?>class="active"<?php endif; ?>><a href="#contact">Contest</a></li>
             <li <?php if($P == 4): ?>class="active"<?php endif; ?>><a href="<?php echo U('Index/Problem');?>">ProblemSet</a></li>
@@ -45,6 +45,14 @@
             </ul>
             </li><?php endif; ?> 
 
+<style>
+h5
+{
+  padding-right:15px;
+  float: left; 
+  color: #AAA;
+}
+</style>
 
           
 
