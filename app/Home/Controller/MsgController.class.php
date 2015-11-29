@@ -42,7 +42,8 @@ class MsgController extends Controller {
     }
     public function sendmsg()
     {
-    		$this->display('Index/sendmsg');
+        $this->userInf = UserController::getInf();
+    	$this->display('Index/sendmsg');
     }
     public function send()
     {
