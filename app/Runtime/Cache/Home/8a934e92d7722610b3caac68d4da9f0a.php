@@ -68,9 +68,15 @@ h5
     
 <body>
 <div class="panel panel-default container" style="width:80%;margin-top:10px;">
-<?php if(is_array($data)): foreach($data as $key=>$msg): ?><div class="panel-body" onclick="location.href='<?php echo U('/Home/bbs/view');?>?id=<?php echo ($msg["id"]); ?>'">
-  	<h3><?php echo ($msg["title"]); ?></h3><br>
-  	<p><?php echo (substr($msg["content"],0,100)); ?>...</p>
+  <div class="panel-body">
+  	<h1><?php echo ($msg["title"]); ?></h1><br>
+  	<p><h4><?php echo ($msg["content"]); ?></h4></p>
   	<h5>作者:<?php echo ($msg["admin"]); ?></h5><h5>最后回复:<?php echo ($msg["admin"]); ?></h5><h5>发帖时间:<?php echo ($msg["last"]); ?></h5><h5>回复数:<?php echo ($msg["re"]); ?></h5>
+  </div>
+
+  <?php if(is_array($res)): foreach($res as $key=>$msg): ?><hr>
+  <div class="panel-body">
+  	<img src="<?php echo ($users[$count]["img"]); ?>"/><p><?php echo ($msg["content"]); ?></p>
+  	<h5>作者:<?php echo ($users[$count++]["nick"]); ?></h5><h5>时间:<?php echo ($msg["from"]); ?></h5>
   </div><?php endforeach; endif; ?>
 </div>

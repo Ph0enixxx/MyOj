@@ -1,0 +1,17 @@
+<include file="Index/header"/>
+<body>
+<div class="panel panel-default container" style="width:80%;margin-top:10px;">
+  <div class="panel-body">
+  	<h1>{$msg.title}</h1><br>
+  	<p><h4>{$msg.content}</h4></p>
+  	<h5>作者:{$msg.admin}</h5><h5>最后回复:{$msg.admin}</h5><h5>发帖时间:{$msg.last}</h5><h5>回复数:{$msg.re}</h5>
+  </div>
+
+  <foreach  name="res" item="msg">
+  	<hr>
+  <div class="panel-body">
+  	<img src="{$users[$count].img}"/><p>{$msg.content}</p>
+  	<h5>作者:{$users[$count++].nick}</h5><h5>时间:{$msg.from}</h5>
+  </div>
+</foreach>
+</div>

@@ -19,6 +19,27 @@ class BbsController extends Controller {
     	$tmp['id'] = (int)$id;
     	$list = M('bbslist');
     	$data = $list->where($tmp)->select();
+    	$this->msg = $data[0];
+
+    	$comment = M('bbsmsg');
+    	$res = $comment->where($tmp)->select();
+    	
+    	$user = M('user');
+    	$users = [];
+    	$count = 0;
+    	foreach ($res as $key) 
+    	{
+       		$tmp['id'] = $key['id'];
+       		$userImg = $user->where($tmp)->limit(1)->select();
+       		$users[$count]['nick'] = $userImg[0]['nick'];
+       		$users[$count++]['img'] = $userImg[0]['img'];
+       	}
+       	var_dump($res);
+       	$this->users = $users;
+       	$this->count = 0;
+    	$this->res = $res;
+    	$this->display('index/view');
+    	//数组来承载名字
 
     }
 }

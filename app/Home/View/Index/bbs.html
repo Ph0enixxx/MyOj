@@ -1,13 +1,5 @@
 <include file="Index/header"/>
 <body>
-<style>
-h5
-{
-	padding-right:15px;
-	float: left; 
-	color: #AAA;
-}
-</style>
 <div class="panel panel-default container" style="width:80%;margin-top:10px;">
 <foreach  name="data" item="msg">
   <div class="panel-body" onclick="location.href='{:U('/Home/bbs/view')}?id={$msg.id}'">
