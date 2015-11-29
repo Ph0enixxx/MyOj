@@ -30,14 +30,16 @@ class BbsController extends Controller {
     	$user = M('user');
     	$users = [];
     	$count = 0;
+        unset($tmp);
     	foreach ($res as $key) 
     	{
-       		$tmp['id'] = $key['id'];
+       		$tmp['from'] = $key['id'];
        		$userImg = $user->where($tmp)->limit(1)->select();
        		$users[$count]['nick'] = $userImg[0]['nick'];
        		$users[$count++]['img'] = $userImg[0]['img'];
        	}
-       	//var_dump($res);
+        //var_dump($res);
+       	//var_dump($users);
        	$this->users = $users;
        	$this->count = 0;
     	$this->res = $res;

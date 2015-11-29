@@ -1157,3 +1157,540 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
 
+[ 2015-11-30T06:42:50+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2015-11-30T06:42:54+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2015-11-30T06:42:58+08:00 ] 127.0.0.1 /oj/index.php/Home/User/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002049s ]
+
+[ 2015-11-30T06:42:59+08:00 ] 127.0.0.1 /oj/index.php/Home/User/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 25 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 26 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 27 行.
+NOTIC: [8] Undefined variable: P /Applications/XAMPP/xamppfiles/htdocs/oj/app/Runtime/Cache/Home/c4d675da734f315aa47c2be816a3d76e.php 第 28 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2015-11-30T06:43:05+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `bbslist` ORDER BY last desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2015-11-30T06:43:09+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2015-11-30T06:44:11+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bbslist` ORDER BY last desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003697s ]
+
+[ 2015-11-30T06:44:13+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `bbslist` ORDER BY last desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2015-11-30T06:44:16+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `bbslist` ORDER BY last desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2015-11-30T06:44:17+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2015-11-30T06:44:19+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `bbslist` ORDER BY last desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2015-11-30T06:44:22+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2015-11-30T06:45:19+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `bbslist` ORDER BY last desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2015-11-30T06:45:37+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2015-11-30T06:46:35+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2015-11-30T06:48:33+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-11-30T06:48:40+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2015-11-30T06:48:42+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2015-11-30T06:48:47+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+SQL: SELECT * FROM `user` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 0 /Applications/XAMPP/xamppfiles/htdocs/oj/app/Home/Controller/BbsController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2015-11-30T06:51:57+08:00 ] 127.0.0.1 /oj/index.php/Home/bbs/view.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `bbslist` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bbslist` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `bbsmsg` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bbsmsg` WHERE `id` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
