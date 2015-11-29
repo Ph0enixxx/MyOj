@@ -73,4 +73,14 @@ h5
   	<p><?php echo (substr($msg["content"],0,100)); ?>...</p>
   	<h5>作者:<?php echo ($msg["admin"]); ?></h5><h5>最后回复:<?php echo ($msg["admin"]); ?></h5><h5>发帖时间:<?php echo ($msg["last"]); ?></h5><h5>回复数:<?php echo ($msg["re"]); ?></h5>
   </div><?php endforeach; endif; ?>
+
+</div>	
+<div class="panel panel-default container" style="width:80%;margin-top:10px;">
+<br>
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="title">
+      <input type="text" class="form-control" placeholder="收件人ID" aria-describedby="basic-addon1" name="to">
+    </div><br>
+    <textarea name="content" class="form-control" style="width:50%;height:50%" placeholder="内容"></textarea><br>
+    <button type="submit" class="btn btn-warning">Submit</button>
 </div>

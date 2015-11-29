@@ -44,4 +44,23 @@ class BbsController extends Controller {
     	//数组来承载名字
 
     }
+    public function writeB()
+    {
+        if(!$_SESSON['id'])
+            return;
+        
+    }
+    public function write($value='')
+    {
+        $this->display('index/write');
+    }
+    public function writeComment()
+    {
+        $this->display('index/writeComment');
+    }
+    public function writeCommentB()
+    {
+        if(!$_SESSON['id'])
+            return;
+    }
 }

@@ -22,7 +22,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li <?php if($P == 1): ?>class="active"<?php endif; ?>><a href="/oj">BBS</a></li>
+            <li <?php if($P == 1): ?>class="active"<?php endif; ?>><a href="<?php echo U('Home/bbs/index');?>">BBS</a></li>
             <li <?php if($P == 2): ?>class="active"<?php endif; ?>><a href="#about">Status</a></li>
             <li <?php if($P == 3): ?>class="active"<?php endif; ?>><a href="#contact">Contest</a></li>
             <li <?php if($P == 4): ?>class="active"<?php endif; ?>><a href="<?php echo U('Index/Problem');?>">ProblemSet</a></li>
@@ -45,6 +45,14 @@
             </ul>
             </li><?php endif; ?> 
 
+<style>
+h5
+{
+  padding-right:15px;
+  float: left; 
+  color: #AAA;
+}
+</style>
 
           
 
@@ -60,7 +68,7 @@
     
 <body>
 <div class="container panel panel-default" style="height:100%;width:23%;float:left;text-align:center">
-<img src="<?php echo ((isset($userInf["img"]) && ($userInf["img"] !== ""))?($userInf["img"]):'/Public/head.png'); ?>" alt="header" class="img-circle"><br>
+<img src="<?php echo ((isset($userInf["img"]) && ($userInf["img"] !== ""))?($userInf["img"]):'/Public/head.png'); ?>" alt="header" class="img-circle" height=100 width=100><br>
  <h2><?php echo ($userInf["nick"]); ?></h2><br>
  <ul>
  <li>累计AC：</li>
@@ -69,7 +77,7 @@
  <li>总排名：</li>
  </ul>
  <button onclick="window.location.href='<?php echo U('/Home/Msg/sendmsg');?>'" class="btn btn-success">写私信</button>
- <button class="btn btn-info">逛论坛</button>
+ <button onclick="window.location.href='<?php echo U('/Home/bbs/index');?>'" class="btn btn-info">逛论坛</button>
 </div>
 <div class="container panel panel-default" style="width:92%;margin-left:24%;margin-top:14px;position:absolute;height:100%;">
   <form  method="post" style="padding-top:10px;" action="<?php echo U('Home/Msg/send');?>">
