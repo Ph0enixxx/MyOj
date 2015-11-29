@@ -20,5 +20,7 @@
 </div>  
 <div class="panel panel-default container" style="width:80%;margin-top:10px;">
 <br>
-<include file="Index/send"/>
+<form  method="post" style="padding-top:10px;" action="{:U('Home/bbs/writecomment')}?id={$id}">
+  <include file="Index/send"/>
+</form>
 </div>  

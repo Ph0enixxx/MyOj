@@ -85,10 +85,13 @@ h5
 </div>  
 <div class="panel panel-default container" style="width:80%;margin-top:10px;">
 <br>
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="title">
-      <input type="text" class="form-control" placeholder="收件人ID" aria-describedby="basic-addon1" name="to">
-    </div><br>
+<form  method="post" style="padding-top:10px;" action="<?php echo U('Home/bbs/writecomment');?>?id=<?php echo ($id); ?>">
+      <div class="input-group">
+      <?php if(empty($nohead)): ?><input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="title">
+      <input type="text" class="form-control" placeholder="收件人ID" aria-describedby="basic-addon1" name="to"><?php endif; ?>
+    </div>
+    <br>
     <textarea name="content" class="form-control" style="width:50%;height:50%" placeholder="内容"></textarea><br>
     <button type="submit" class="btn btn-warning">Submit</button>
+</form>
 </div>

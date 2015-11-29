@@ -13,6 +13,7 @@ class BbsController extends Controller {
     	$data = $list->order('last desc')->page($page.',10')->select();
         $this->data = $data;
         //var_dump($data); 
+        $this->nohead = 1;
         $this->display('index/bbs');
     }
     public function view($id=0)
@@ -40,27 +41,53 @@ class BbsController extends Controller {
        	$this->users = $users;
        	$this->count = 0;
     	$this->res = $res;
+        $this->nohead = 1;
+        $this->id = $id;
     	$this->display('index/view');
     	//数组来承载名字
 
     }
-    public function writeB()
+    public function write()
     {
-        if(!$_SESSON['id'])
+        if(!$_SESSION['username'])
             return;
-        
-    }
-    public function write($value='')
-    {
-        $this->display('index/write');
+        $data['title'] = I('post.title');
+        $data['content'] = I('post.content');
+        $data['admin'] = $_SESSION['username'];
+        $D = M('bbslist');
+        if($D->add($data))
+        {
+            echo "<script language='javascript'>\n";
+            echo "alert('发帖成功');\n";
+            echo "location.href='".U('/Home/bbs/index')."'\n";
+            echo "</script>";
+        }
+
     }
     public function writeComment()
     {
-        $this->display('index/writeComment');
-    }
-    public function writeCommentB()
-    {
-        if(!$_SESSON['id'])
+        if((!$_SESSION['id'])||(is_null(I('post.content'))))
             return;
+        
+        $tmp['id'] = I('get.id');
+        
+        $D = M('bbslist');
+        $re = $D->where($tmp)->limit(1)->select();
+        $re[0]['re']++;
+        $re[0]['last'] = time();
+        $D->save($re);
+
+        $tmp['content'] = I('post.content');
+        $tmp['from'] = $_SESSION['id'];
+        $comment = D('bbsmsg');
+        if($comment->add($tmp))
+        {
+            echo "<script language='javascript'>\n";
+            echo "alert('发帖成功');\n";
+            echo "location.href='".U('/Home/bbs/index')."'\n";
+            echo "</script>";
+        }
+ 
     }
+
 }

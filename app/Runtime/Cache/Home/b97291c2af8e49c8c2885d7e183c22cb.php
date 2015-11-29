@@ -71,16 +71,23 @@ h5
 <?php if(is_array($data)): foreach($data as $key=>$msg): ?><div class="panel-body" onclick="location.href='<?php echo U('/Home/bbs/view');?>?id=<?php echo ($msg["id"]); ?>'">
   	<h3><?php echo ($msg["title"]); ?></h3><br>
   	<p><?php echo (substr($msg["content"],0,100)); ?>...</p>
-  	<h5>作者:<?php echo ($msg["admin"]); ?></h5><h5>最后回复:<?php echo ($msg["admin"]); ?></h5><h5>发帖时间:<?php echo ($msg["last"]); ?></h5><h5>回复数:<?php echo ($msg["re"]); ?></h5>
+  	<h5>作者:<?php echo ($msg["admin"]); ?></h5><h5>最后回复:<?php echo ($msg["last"]); ?></h5><h5>发帖时间:<?php echo ($msg["time"]); ?></h5><h5>回复数:<?php echo ($msg["re"]); ?></h5>
   </div><?php endforeach; endif; ?>
 
 </div>	
 <div class="panel panel-default container" style="width:80%;margin-top:10px;">
 <br>
+  <form  method="post" action="<?php echo U('Home/bbs/write');?>">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="title">
-      <input type="text" class="form-control" placeholder="收件人ID" aria-describedby="basic-addon1" name="to">
-    </div><br>
+      <input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="title" style="width:245%">
+      <input type="hidden"/>
+    </div>
+	    <div class="input-group">
+      <?php if(empty($nohead)): ?><input type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" name="title">
+      <input type="text" class="form-control" placeholder="收件人ID" aria-describedby="basic-addon1" name="to"><?php endif; ?>
+    </div>
+    <br>
     <textarea name="content" class="form-control" style="width:50%;height:50%" placeholder="内容"></textarea><br>
     <button type="submit" class="btn btn-warning">Submit</button>
+  </form>
 </div>
