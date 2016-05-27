@@ -1,0 +1,21 @@
+<import file="Bbs.Index.amazeui" type="css"/>
+<volist name="list" id="data">
+	<section class="am-panel am-panel-default">
+	        <div class="am-panel-hd">{$data.title}</div>
+	        <ul class="am-list blog-list">
+	          <li><a>{$data.content}</a></li>
+	        </ul>
+	</section>
+</volist>
+
+
+<volist name="list2" id="data2">
+	<section class="am-panel am-panel-default">
+	        <div class="am-panel-hd">{$data2.title}</div>
+	        <ul class="am-list blog-list">
+	          <li><a>{$data2.content}</a></li>
+	        </ul>
+	</section>
+</volist>
+
+<include file="foot"/>

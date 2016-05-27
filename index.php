@@ -8,6 +8,6 @@ setcookie("ck","1",time()+1);//设定cookie存活时间3s
 
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 	define('APP_DEBUG',True);
-	#define('BIND_MODULE','Home');
+	//define('BIND_MODULE','Ranklist');
 	define('APP_PATH','./app/');
 require './ThinkPHP/ThinkPHP.php';

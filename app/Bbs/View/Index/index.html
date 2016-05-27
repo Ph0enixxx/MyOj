@@ -1,0 +1,14 @@
+<import file="Bbs.Index.amazeui" type="css"/>
+<section class="am-panel am-panel-default">
+        <div class="am-panel-hd">主题</div>
+
+        <ul class="am-list blog-list">
+          <volist name="list" id="data">
+          <li><a href="{:U('Index/inside')}?id={$data.id}">{$data.title}</a></li>
+          </volist>
+        </ul>
+</section>
+
+
+
+<include file="foot"/>
