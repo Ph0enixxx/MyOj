@@ -19,7 +19,7 @@ class IndexController extends Controller {
     	$tmp['contest_id'] = $cid;
         $data = $m->where
         ($tmp)->join('RIGHT JOIN oj_problem on problem_id = oj_problem.id')->select();
-        var_dump($data);
+        //var_dump($data);
         $this->data = $data;
         $this->display();
     }
@@ -29,7 +29,7 @@ class IndexController extends Controller {
     	$tmp = [];
     	$tmp['id'] = $pid;
         $data = $m->where($tmp)->select();
-        var_dump($data);
+        //var_dump($data);
         $this->data = $data;
         $this->display();
     	#单个问题probelm表
