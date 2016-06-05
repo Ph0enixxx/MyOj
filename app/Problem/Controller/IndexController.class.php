@@ -7,7 +7,7 @@ class IndexController extends Controller {
         #总列表contest表
         $m = M('contest');
         $data = $m->order("start_time desc")->select();
-        var_dump($data);
+        //var_dump($data);
         $this->data = $data;
         $this->display();
     }
@@ -17,15 +17,18 @@ class IndexController extends Controller {
     	$m = M('contest_problem');
     	$tmp = [];
     	$tmp['contest_id'] = $cid;
-        $data = $m->field('problem_id')->select();
+        $data = $m->where
+        ($tmp)->join('RIGHT JOIN oj_problem on problem_id = oj_problem.id')->select();
         var_dump($data);
         $this->data = $data;
         $this->display();
     }
-    public function view($pid='')
+    public function view($pid=0)
     {
     	$m = M('problem');
-        $data = $m->select();
+    	$tmp = [];
+    	$tmp['id'] = $pid;
+        $data = $m->where($tmp)->select();
         var_dump($data);
         $this->data = $data;
         $this->display();

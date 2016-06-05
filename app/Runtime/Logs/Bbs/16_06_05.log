@@ -1,0 +1,22 @@
+[ 2016-06-05T11:16:09+08:00 ] 127.0.0.1 /oj2/index.php/Bbs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SELECT * FROM `oj_topic` WHERE `mainid` = 0  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined variable: mainId /Applications/XAMPP/xamppfiles/htdocs/oj2/app/Runtime/Cache/Bbs/708d009b0e29788380958a5c0a765f1f.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
