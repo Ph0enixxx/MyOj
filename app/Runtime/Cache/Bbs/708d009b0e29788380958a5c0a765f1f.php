@@ -1,9 +1,43 @@
 <?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" type="text/css" href="/oj2/Public/Bbs/Index/amazeui.css" />
+<style type="text/css">
+	span{
+		width:auto;
+	}
+	ul a{
+		width:50%;
+		display: block;
+
+	}
+	ul h2{
+		text-decoration: clear;
+		padding-left: 20px;
+		height: 15px;
+	}
+	li{
+		width:100%;
+		display: block;
+
+	}
+	span{
+		color:#222;
+	}
+	.am-list li{
+		padding-left: 20px;
+	}
+	.content{
+		padding-left: 20px;
+		color:#CCC;
+
+	}
+</style>
+<实时聊天！！！>
 <section class="am-panel am-panel-default">
         <div class="am-panel-hd">主题</div>
 
         <ul class="am-list blog-list">
-          <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Index/inside');?>?id=<?php echo ($data["id"]); ?>"><?php echo ($data["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+          <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li><tr><h2><a href="<?php echo U('Index/inside');?>?id=<?php echo ($data["id"]); ?>"><?php echo ($data["title"]); ?></a></h2></tr>
+          <div class="content"><?php echo (substr($data["content"],0,20)); ?></div>
+          <span>帖子id:<?php echo ($data["id"]); ?></span><span>作者id:<?php echo ($data["name"]); ?></span><span>发帖时间：<?php echo ($data["time"]); ?></span></li><?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
 </section>
 
@@ -47,28 +81,27 @@
       </div>
 
       <div class="am-tab-panel am-fade am-active am-in" id="tab2">
-          <div class="am-g am-margin-top">
+      <?php if($inside != 1): ?><div class="am-g am-margin-top">
             <div class="am-u-sm-4 am-u-md-2 am-text-right" >
-              文章标题
+              标题
             </div>
             <div class="am-u-sm-8 am-u-md-4">
               <input type="text" class="am-input-sm" name="title">
             </div>
             <div class="am-hide-sm-only am-u-md-6">*必填，不可重复</div>
-          </div>
-
+          </div><?php endif; ?>
           <div class="am-g am-margin-top">
             <div class="am-u-sm-4 am-u-md-2 am-text-right" >
-              文章作者
+              作者
             </div>
             <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
-              <input type="text" class="am-input-sm" name="author">
+              <div class="am-input-sm" name="author"><?php echo session("user");?></div>
             </div>
           </div>
 
           <div class="am-g am-margin-top-sm">
             <div class="am-u-sm-12 am-u-md-2 am-text-right admin-form-text" >
-              内容描述
+              内容
             </div>
             <div class="am-u-sm-12 am-u-md-10">
               <textarea rows="10" name="content" placeholder="请使用富文本编辑插件"></textarea>

@@ -8,7 +8,7 @@
 
 
 <?php if(is_array($list2)): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data2): $mod = ($i % 2 );++$i;?><section class="am-panel am-panel-default">
-	        <div class="am-panel-hd"><?php echo ($data2["title"]); ?></div>
+	        <div class="am-list"><?php echo ($data2["name"]); ?>在<?php echo ($data2["time"]); ?>说：</div>
 	        <ul class="am-list blog-list">
 	          <li><a><?php echo ($data2["content"]); ?></a></li>
 	        </ul>
@@ -52,31 +52,30 @@
       </div>
 
       <div class="am-tab-panel am-fade am-active am-in" id="tab2">
-          <div class="am-g am-margin-top">
+      <?php if($inside != 1): ?><div class="am-g am-margin-top">
             <div class="am-u-sm-4 am-u-md-2 am-text-right" >
-              文章标题
+              标题
             </div>
             <div class="am-u-sm-8 am-u-md-4">
               <input type="text" class="am-input-sm" name="title">
             </div>
             <div class="am-hide-sm-only am-u-md-6">*必填，不可重复</div>
-          </div>
-
+          </div><?php endif; ?>
           <div class="am-g am-margin-top">
             <div class="am-u-sm-4 am-u-md-2 am-text-right" >
-              文章作者
+              作者
             </div>
             <div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
-              <input type="text" class="am-input-sm" name="author">
+              <div class="am-input-sm" name="author"><?php echo session("user");?></div>
             </div>
           </div>
 
           <div class="am-g am-margin-top-sm">
             <div class="am-u-sm-12 am-u-md-2 am-text-right admin-form-text" >
-              内容描述
+              内容
             </div>
             <div class="am-u-sm-12 am-u-md-10">
-              <textarea rows="10" name="content" placeholder="请使用富文本编辑插件"></textarea>
+              <textarea rows="10" name="content" placeholder="say.."></textarea>
             </div>
           </div>
 

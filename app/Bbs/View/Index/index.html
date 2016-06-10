@@ -1,10 +1,44 @@
 <import file="Bbs.Index.amazeui" type="css"/>
+<style type="text/css">
+	span{
+		width:auto;
+	}
+	ul a{
+		width:50%;
+		display: block;
+
+	}
+	ul h2{
+		text-decoration: clear;
+		padding-left: 20px;
+		height: 15px;
+	}
+	li{
+		width:100%;
+		display: block;
+
+	}
+	span{
+		color:#222;
+	}
+	.am-list li{
+		padding-left: 20px;
+	}
+	.content{
+		padding-left: 20px;
+		color:#CCC;
+
+	}
+</style>
+<实时聊天！！！>
 <section class="am-panel am-panel-default">
         <div class="am-panel-hd">主题</div>
 
         <ul class="am-list blog-list">
           <volist name="list" id="data">
-          <li><a href="{:U('Index/inside')}?id={$data.id}">{$data.title}</a></li>
+          <li><tr><h2><a href="{:U('Index/inside')}?id={$data.id}">{$data.title}</a></h2></tr>
+          <div class="content">{$data.content|substr=0,20}</div>
+          <span>帖子id:{$data.id}</span><span>作者id:{$data.name}</span><span>发帖时间：{$data.time}</span></li>
           </volist>
         </ul>
 </section>
