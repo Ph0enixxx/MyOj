@@ -1,0 +1,18 @@
+<include file="Public@html/head" title="运行状态"/>
+<include file="Public@Css/table"/>
+<include file="Public@Css/form"/>
+<form>
+	用户名：<input name="user_id"/>
+	问题ID：<input name="problem_id"/>
+	语言（单选下拉框）：<input name="language"/>
+	SolutionID：<input name="solution_id"/>
+	<input type="submit"/>
+</form>
+<table style="width:100%">
+ 	<tr><td>SolutionID</td><td>用户ID</td><td>提交时间</td><td>状态</td><td>问题ID</td><td>内存</td><td>语言</td><td>ContestID</td><td>运行时间</td><td>代码长度</td></tr>
+	<volist name="data" id="vo"><tr>
+ 		<td>{$vo.id}</td><td>{$vo.user_id}</td><td>{$vo.time}</td><td>{$vo.status}</td><td>{$vo.problem_id}</td><td>{$vo.memory}</td><td>{$vo.language}</td><td>{$vo.contest_id}</td><td>{$vo.judge_time}</td><td>{$vo.code_lenth}</td>
+ 	</tr>
+	</volist>
+</table>
+<include file="Public@html/page"/>

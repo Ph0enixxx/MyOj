@@ -4,18 +4,28 @@ use Think\Controller;
 class LoginController extends Controller {
     public function index(){
     	//echo session("user");
+        //$Verify = new \Think\Verify();
+        //$Verify->entry(1);
         $this->display();
+    }
+    public function verify()
+    {
+        $Verify = new \Think\Verify();
+        $Verify->entry(1);
+        //return session('verify_code');
     }
     public function check()
     {
-        session('[start]');
-    	$tmp = [];
-
+        if(!((new \Think\Verify())->check(I('post.verify'),1)))
+        {
+            //var_dump(session('verify_code'));
+            $this->error("Verify failed!",U("Login/index"));
+        }
         $result = $this->login(I("post.mail"),md5(I("post.password")));
         if($result)
         {
             //var_dump($data);
-            $this->success("Login success!",U("Index/index"),3);
+            $this->success("Login success!",U("Bbs/Index/index"),3);
         }
         else
         {
@@ -41,7 +51,7 @@ class LoginController extends Controller {
         }
         else
         {
-            echo "失败";
+            #echo "失败";
             return false;
         }
     }

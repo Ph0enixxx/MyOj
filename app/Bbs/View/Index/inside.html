@@ -1,16 +1,27 @@
 <import file="Bbs.Index.amazeui" type="css"/>
+<style type="text/css">
+	.bbs{
+		width:98%;
+		margin-left:auto;margin-right:auto;
+	}
+	.content{
+		width: 98%;
+		background-color: white;
+		color:#222;
+		margin-left:auto;margin-right:auto;
+
+	}
+</style>
 <volist name="list" id="data">
-	<section class="am-panel am-panel-default">
+	<section class="am-panel am-panel-default bbs">
 	        <div class="am-panel-hd">{$data.title}</div>
-	        <ul class="am-list blog-list">
-	          <li><a>{$data.content}</a></li>
-	        </ul>
+	          <pre class="content">{$data.content}</pre>
 	</section>
 </volist>
 
 
 <volist name="list2" id="data2">
-	<section class="am-panel am-panel-default">
+	<section class="am-panel am-panel-default bbs">
 	        <div class="am-list">{$data2.name}在{$data2.time}说：</div>
 	        <ul class="am-list blog-list">
 	          <li><a>{$data2.content}</a></li>

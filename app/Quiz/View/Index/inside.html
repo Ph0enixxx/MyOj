@@ -1,0 +1,13 @@
+<br><center><h5>{$title}</h5></center><br>
+<form action="{:U('Index/judge')}" method="post">
+<input type="hidden" name="quizid" value="{$id}"/>
+<?php $p=1;?>
+<volist name="problems" id="vo">
+<hr>
+{$p++}.{$vo.content}({$vo.rank}分)
+<br>
+{$vo.format}
+</volist>
+<br>
+<input type="submit"/>
+</form>

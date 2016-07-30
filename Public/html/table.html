@@ -1,0 +1,15 @@
+<style type="text/css">
+table{border-collapse: collapse; width: 100%; font-size: 14px;}
+table th{background-color: #E8E8E8;}
+table th,
+table td{border: solid 1px #ccc; padding: 8px;}
+</style>
+<table style="width:100%">
+ <tr><td>SolutionID</td><td>用户ID</td><td>提交时间</td><td>状态</td><td>问题ID</td><td>内存</td><td>语言</td><td>ContestID</td><td>运行时间</td><td>代码长度</td>
+ </tr>
+<volist name="data" id="vo">
+ <tr>
+ <td>{$vo.id}</td><td>{$vo.user_id}</td><td>{$vo.time}</td><td>{$vo.status}</td><td>{$vo.problem_id}</td><td>{$vo.memory}</td><td>{$vo.language}</td><td>{$vo.contest_id}</td><td>{$vo.judge_time}</td><td>{$vo.code_lenth}</td>
+ </tr>
+</volist>
+</table>

@@ -1,0 +1,72 @@
+<script src="__PUBLIC__/js/jquery.js"></script>
+<style type="text/css">
+table{border-collapse: collapse; width: 100%; font-size: 14px;}
+table th{background-color: #E8E8E8;}
+table th,
+table td{border: solid 1px #ccc; padding: 8px;}
+</style>
+
+#添加试卷
+<form action="{:U('Admin/addContest')}" method="post">
+	Title：<input name="title"/> <input type="submit"/>
+</form>
+#添加题目
+<form action="{:U('Admin/addProblem')}" method="post">
+	Content:<input name="content"/>
+	Answer:<input name="answer"/>
+	Rank:<input name="rank"/><br>
+	Format :<br><textarea rows="5" cols="30" name="format" id="form" ></textarea> <input type="submit"/> 
+	<input name="form" type="radio" onclick="fill()">填空模板
+	<input name="form" type="radio" onclick="radio()">单选模板
+	<!--<input name="form" type="radio" onclick="check()">多选模板 -->
+</form>
+#添加试题
+<form action="{:U('Admin/addQuiz')}" method="post">
+	Contest_id:<input name="quiz_id"/>
+	Problem_id:<input name="problem_id"/> <input type="submit"/>
+</form>
+#学生是否可见成绩
+<form action="{:U('Admin/visiable')}" method="post">
+	是<input name="is" value="1" type="radio" />
+	否<input name="is" value="0" type="radio" /> <input type="submit"/>
+</form>
+
+当前试卷：<br>
+<table style="width:100%">
+ <tr><td>ID</td><td>题目</td><td></td></tr>
+<volist name="data_c" id="vo">
+ <tr>
+ <td>{$vo.id}</td><td><a href="{:U('Index/inside')}/id/{$vo.id}">{$vo.title}</a></td><td><if condition="$vo.locked eq 1"><a href="{:U('Admin/unlock')}/id/{$vo.id}">解锁</a><else/><a href="{:U('Admin/lock')}/id/{$vo.id}">加锁</a></if></td>
+ </tr>
+</volist>
+</table>
+当前题目：<br>
+<table style="width:100%">
+ <tr><td>ID</td><td>问题</td><td>答案</td></tr>
+<volist name="data_p" id="vo">
+<tr><td>{$vo.id}</td><td>{$vo.content} </td><td>{$vo.answer}</td></tr>
+</volist>
+</table>
+成绩单：<br>
+<table style="width:100%">
+<tr><td>USER_ID</td><td>试卷</td><td>得分</td></tr>
+<volist name="data_r" id="vo">
+<tr><td>{$vo.user_id}</td><td>{$vo.quiz_id}</td><td>{$vo.rank}</td></tr>
+</volist>
+</table>
+答题记录：<br>
+<table style="width:100%">
+<tr><td>USER_ID</td><td>时间</td><td>题号</td><td>答案</td></tr>
+
+<volist name="data" id="vo">
+<tr><td>{$vo.user_id}</td><td>{$vo.time}</td><td>{$vo.quiz_id}</td><td>{$vo.answer}</td></tr>
+</volist>
+</table>
+<script type="text/javascript">
+	function fill() {
+		document.getElementById('form').innerHTML="<input name='answer'/>";
+	}
+	function radio() {
+		document.getElementById('form').innerHTML="<input name='answer' type='radio' value='答案选项1'>A.答案选项1</input><input name='answer' type='radio'  value='答案选项2'>B.答案选项2</input><input name='answer' type='radio' value='答案选项3'>C.答案选项3</input><input name='answer' type='radio' value='答案选项4'>D.答案选项4</input>";
+	}
+</script>

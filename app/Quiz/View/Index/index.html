@@ -1,0 +1,15 @@
+<style type="text/css">
+table{border-collapse: collapse; width: 100%; font-size: 14px;}
+table th{background-color: #E8E8E8;}
+table th,
+table td{border: solid 1px #ccc; padding: 8px;}
+</style>
+<table style="width:100%">
+ <tr><td>ID</td><td>题目</td></tr>
+<volist name="data" id="vo">
+ <tr>
+ <td>{$vo.id}</td><td><a href="{:U('Index/inside')}/id/{$vo.id}">{$vo.title}</a></td>
+ </tr>
+</volist>
+</table>
+<tt><a href="{:U('Index/log')}">查看成绩单</a></tt>

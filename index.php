@@ -7,6 +7,7 @@ error_reporting(0);
 //echo "hello!"; 
 
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
+	#define('STORAGE_TYPE','sae');
 	define('APP_DEBUG',True);
 	//define('BIND_MODULE','Ranklist');
 	define('APP_PATH','./app/');

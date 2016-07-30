@@ -12,6 +12,11 @@ class IndexController extends AuthController {
        //var_dump($data);
        $this->display();
     }
+    public function verify()
+    {
+        $Verify = new \Think\Verify();
+        $Verify->entry(1);
+    }
     public function inside($id=1)
     {
     	$m = M('topic');
@@ -37,7 +42,11 @@ class IndexController extends AuthController {
     public function add()//ok
     {
     	$m = M('topic');
-
+      if(!((new \Think\Verify())->check(I('post.verify'),1)))
+        {
+            //var_dump(session('verify_code'));
+            $this->error("Verify failed!",U("/Bbs/Index/index"));
+        }
     	$tmp = [];
     	$tmp['title'] 	= I('post.title')?I('post.title'):NULL;
     	$tmp['content'] = I('post.content')?I('post.content'):NULL;
@@ -62,4 +71,5 @@ class IndexController extends AuthController {
         $this->success("发布失败",$url);
 
     }
+
 }

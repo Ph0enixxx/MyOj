@@ -1,6 +1,0 @@
-[ 2015-06-23T10:31:24+08:00 ] 127.0.0.1 /thbbs/index.php/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
-NOTIC: [2] array_shift() expects parameter 1 to be array, string given /Applications/XAMPP/xamppfiles/htdocs/thbbs/ThinkPHP/Library/Think/Route.class.php 第 38 行.
-

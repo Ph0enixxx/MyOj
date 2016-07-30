@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?><script> location.href="<?php echo U('Login/index');?>"</script>
