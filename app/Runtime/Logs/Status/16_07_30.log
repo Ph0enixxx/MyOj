@@ -1209,3 +1209,32 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
 
+[ 2016-07-30T13:17:18+08:00 ] 127.0.0.1 /oj2/index.php/Status/Index/index?page=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+SQL: SHOW COLUMNS FROM `oj_solution` [ RunTime:0.0230s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `oj_solution` LIMIT 1   [ RunTime:0.0064s ]
+SQL: SELECT * FROM `oj_solution` LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined index: problem_id /Applications/XAMPP/xamppfiles/htdocs/oj2/app/Runtime/Cache/Status/893272d7d3ef84dee73f0b12c9556dc7.php 第 24 行.
+NOTIC: [8] Undefined index: problem_id /Applications/XAMPP/xamppfiles/htdocs/oj2/app/Runtime/Cache/Status/893272d7d3ef84dee73f0b12c9556dc7.php 第 24 行.
+NOTIC: [8] Undefined index: problem_id /Applications/XAMPP/xamppfiles/htdocs/oj2/app/Runtime/Cache/Status/893272d7d3ef84dee73f0b12c9556dc7.php 第 24 行.
+NOTIC: [8] Undefined index: problem_id /Applications/XAMPP/xamppfiles/htdocs/oj2/app/Runtime/Cache/Status/893272d7d3ef84dee73f0b12c9556dc7.php 第 24 行.
+NOTIC: [8] Undefined index: problem_id /Applications/XAMPP/xamppfiles/htdocs/oj2/app/Runtime/Cache/Status/893272d7d3ef84dee73f0b12c9556dc7.php 第 24 行.
+NOTIC: [8] Undefined index: problem_id /Applications/XAMPP/xamppfiles/htdocs/oj2/app/Runtime/Cache/Status/893272d7d3ef84dee73f0b12c9556dc7.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+

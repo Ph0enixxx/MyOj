@@ -1,0 +1,10 @@
+<include file="Public@html/head" title="排名"/>
+<include file="Public@Css/table"/>
+<include file="Public@Css/form"/> 
+<table style="width:100%">
+<tr><td>用户ID</td><td>完成题目数</td></tr>
+	<volist name="data" id="vo"><tr>
+ 		<td>{$vo.user_id}</td><td>{$vo.accept}</td>
+ 	</tr>
+	</volist>
+</table>
