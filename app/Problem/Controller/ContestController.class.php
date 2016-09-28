@@ -1,8 +1,7 @@
 <?php
 namespace Problem\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-    #问题列表
+class ContestController extends Controller {
     public function index()
     {
         #总列表contest表
