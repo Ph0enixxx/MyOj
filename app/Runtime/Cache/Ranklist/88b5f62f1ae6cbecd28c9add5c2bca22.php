@@ -17,3 +17,4 @@ input{border-collapse: collapse;font-size: 14px;}
  		<td><?php echo ($vo["user_id"]); ?></td><td><?php echo ($vo["accept"]); ?></td>
  	</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
+<a href="<?php echo U('Index/index');?>?page=<?php echo ($page+1); ?>">下一页</a>
