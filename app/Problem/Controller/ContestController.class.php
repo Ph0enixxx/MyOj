@@ -10,7 +10,7 @@ class ContestController extends Controller {
         //var_dump($data);
         $this->data = $data;
         $this->display();
-        echo "aaaaaaaa";
+        //echo "aaaaaaaa";
     }
 
     public function inside($cid=0)
