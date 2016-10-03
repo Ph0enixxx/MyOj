@@ -1,0 +1,72 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>YanTai University coding OnlineJudge</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/Public/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="__ROOT__">YTU OnlineJudge</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li <if condition="$P eq 1">class="active"</if>><a href="{:U('Home/bbs/index')}">BBS</a></li>
+            <li <if condition="$P eq 2">class="active"</if>><a href="#about">Status</a></li>
+            <li <if condition="$P eq 3">class="active"</if>><a href="#contact">Contest</a></li>
+            <li <if condition="$P eq 4">class="active"</if>><a href="{:U('Index/Problem')}">ProblemSet</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <empty name="Think.session.nick">
+            <li><a href="{:U('Login/index')}">Login</a></li>
+          <else /> 
+            <li class="dropdown">
+            <a href="{:U('Login')}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$_SESSION.nick|default="Login"}<span class="caret"></span></a> 
+            <ul class="dropdown-menu">
+              <li><a href="{:U('User/Index')}">个人中心</a></li>
+              <li><a href="#">修改资料</a></li>
+              <li><a href="{:U('Msg/index')}">私信
+
+              <notempty name="Think.session.msg">
+                <span class="badge">{$Think.session.msg}</span>
+              </notempty>
+              </a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="{:U('login/logout')}">登出</a></li>
+            </ul>
+            </li>
+          </empty> 
+
+<style>
+h5
+{
+  padding-right:15px;
+  float: left; 
+  color: #AAA;
+}
+</style>
+
+          
+
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <script src="/Public/bootstrap/js/jquery.js"></script>
+    <script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+
+  </head>
+<body style="padding-top:50px;">
+    

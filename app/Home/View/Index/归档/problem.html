@@ -1,0 +1,31 @@
+<include file="Index/header"/>
+<div class="jumbotron" style="text-align:center;background-image:url('/Public/img/head.jpg')">
+  <h1 style="color:white;">ProblemSet</h1>
+  <form class="form-inline">
+  <input type="text" class="form-control"  style="width:360px">
+<button type="button" class="btn btn-success">查找</button></form>
+</div>
+<body>
+  <div class="container">
+    <table class="table table-striped container">
+      <tbody>
+          <tr>
+             <td>ID</td>
+             <td>标题</td>
+             <td>来源</td>
+             <td>AC</td>
+             <td>提交数</td>
+          </tr>
+      <foreach name="problemList" item="data" >
+          <tr>
+             <td>{$data.id}</td>
+             <td>{$data.title}</td>
+             <td>{$data.source}</td>
+             <td>{$data.AC}</td>
+             <td>{$data.submit}</td>
+          </tr>
+      </foreach> 
+      </tbody> 
+    </table>
+  </div>
+</body> 

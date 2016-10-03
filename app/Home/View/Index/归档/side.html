@@ -1,0 +1,12 @@
+<div class="container panel panel-default" style="height:100%;width:23%;float:left;text-align:center">
+<img src="{$userInf.img|default='/Public/head.png'}" alt="header" class="img-circle" height=100 width=100><br>
+ <h2>{$userInf.nick}</h2><br>
+ <ul>
+ <li>累计AC：</li>
+ <li>累计签到：</li>
+ <li>今日排名：</li>
+ <li>总排名：</li>
+ </ul>
+ <button onclick="window.location.href='{:U('/Home/Msg/sendmsg')}'" class="btn btn-success">写私信</button>
+ <button onclick="window.location.href='{:U('/Home/bbs/index')}'" class="btn btn-info">逛论坛</button>
+</div>
